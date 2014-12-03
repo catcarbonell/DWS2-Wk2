@@ -24,17 +24,18 @@ $primary-font: "Josefin Sans", Arial, sans-serif;
 $primary-font-size: 4em;
 $primary-bg: #eee;
 
-/* --- global --*/
+
+/* --- global --- */
 div p, td, a {
   @include text (3.5);
 }
 
-table td{
-  text-align: center;
-  vertical-align: middle;
+/* --- gallery/ORBIT --- */
+.orbit-container {
+  font-;
 }
 
-/* --- headers --*/
+/* --- headers --- */
 
 h1 {
   @include headers(1);
@@ -90,10 +91,9 @@ nav a.button {
   &:hover{
     @extend .button:hover;
   }
-
 }
 
-/*--- MEDIA QUERIES ---*/
+/* --- MEDIA QUERIES --- */
 
 @media only screen and (max-width: 1080px) {
 
@@ -114,8 +114,17 @@ nav a.button {
     padding: 0;
   }
 
+  .media-extend td{
+    text-align: center;
+    padding: 1%;
+  }
+
   .media-extend td:nth-child(5n+1){
-    width: 30%;
+    width: 25%;
+  }
+
+  #macaron td:nth-child(5n+1){
+    width: 50%;
   }
 
 }

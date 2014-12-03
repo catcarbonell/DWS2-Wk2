@@ -1,13 +1,10 @@
-/* --- global --*/
+/* --- global --- */
 div p, td, a {
   font-family: "Josefin Sans", Arial, sans-serif;
   font-size: 1.14286em; }
 
-table td {
-  text-align: center;
-  vertical-align: middle; }
-
-/* --- headers --*/
+/* --- gallery/ORBIT --- */
+/* --- headers --- */
 h1, h2, h3 {
   font-family: "Fredoka One", cursive;
   font-size: 4em;
@@ -47,7 +44,7 @@ a, a:visited {
 nav a.button {
   background-color: white; }
 
-/*--- MEDIA QUERIES ---*/
+/* --- MEDIA QUERIES --- */
 @media only screen and (max-width: 1080px) {
   body {
     font-size: 0.9em; }
@@ -63,7 +60,14 @@ nav a.button {
     margin: 1% auto;
     padding: 0; }
 
+  .media-extend td {
+    text-align: center;
+    padding: 1%; }
+
   .media-extend td:nth-child(5n+1) {
-    width: 30%; } }
+    width: 25%; }
+
+  #macaron td:nth-child(5n+1) {
+    width: 50%; } }
 
 /*# sourceMappingURL=custom.css.map */

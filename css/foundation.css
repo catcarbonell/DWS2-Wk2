@@ -3019,7 +3019,7 @@ meta.foundation-mq-topbar {
       height: 3px;
       background-color: rgba(255, 255, 255, 0.3);
       display: block;
-      width: 0%;
+      width: 0;
       position: relative;
       right: 20px;
       top: 5px; }
@@ -3126,12 +3126,13 @@ meta.foundation-mq-topbar {
     display: inherit; }
   .touch .orbit-bullets {
     display: block; } }
+
 @media only screen and (max-width: 40em) {
   .orbit-stack-on-small .orbit-slides-container {
     height: auto !important; }
   .orbit-stack-on-small .orbit-slides-container > * {
     position: relative;
-    margin: 0% !important;
+    margin: 0 !important;
     opacity: 1 !important; }
   .orbit-stack-on-small .orbit-slide-number {
     display: none; }
