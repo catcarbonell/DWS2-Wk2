@@ -1,0 +1,94 @@
+@mixin headers ($shrinkray){
+  font-family: $header-font;
+  font-size: $header-font-size / ($shrinkray);
+}
+
+@mixin button ($plus){
+  @include second-headers;
+  background: $primary-bg + $plus;
+  &:hover{
+    @include prime-headers;
+    background: $primary-bg;
+  }
+}
+
+$primary-color: #c46875;
+$secondary-color: #555;
+$header-font: "Fredoka One", cursive;
+$header-font-size: 4em;
+$primary-bg: #eee;
+
+
+/* --- headers --*/
+
+h1 {
+  @include headers(1);
+  color: $primary-color;
+  text-align: center;
+}
+
+h2 {
+  @include headers(2.5);
+  @extend h1;
+}
+
+h3 {
+  @include headers(1.7);
+  @extend h1;
+}
+
+h4, h5, th {
+  @include headers(3.5);
+  color:  $secondary-color;
+}
+
+.logo h1{
+  @include headers(2);
+}
+
+/* --- buttons & links --- */
+a, a:visited {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+  color: $secondary-color;
+  }
+
+}
+
+.button {
+  @extend h4;
+  background-color: $primary-bg;
+
+  &:hover{
+    background-color: $primary-bg;
+    color: $primary-color;
+  }
+
+}
+
+nav a.button {
+  @extend .button;
+  background-color: $primary-bg * 10;
+
+  &:hover{
+    @extend .button:hover;
+  }
+
+}
+
+/*--- MEDIA QUERIES ---*/
+
+@media only screen and (max-width: 60em) {
+  .media-extend table {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  td:nth-child(5n+1){
+    width: 20%;
+  }
+
+}

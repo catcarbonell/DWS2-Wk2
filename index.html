@@ -1,0 +1,249 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>The Lucky Cat Café</title>
+
+        <!-- stylesheets -->
+        <link href="css/foundation.min.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
+
+        <!-- fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+
+        <script src="js/vendor/modernizr.js"></script>
+
+    </head>
+
+  <body>
+
+      <div class="row">
+          <header class="logo large-4 columns">
+              <h1>The Lucky Cat Café</h1>
+          </header>
+          <nav class="large-8 columns">
+              <ul class="button-group right">
+                  <li><a href="#reservation" class="button">Reservations</a></li>
+                  <li><a href="#menu" class="button">Menu</a></li>
+                  <li><a href="#events" class="button">Events</a></li>
+                  <li><a href="#location" class="button">Location</a></li>
+              </ul>
+          </nav>
+      </div>
+
+
+      <div class="row">
+            <div class="large-12 columns">
+                <ul id="gallery" data-orbit data-options="timer: false">
+                    <li>
+                        <img src="img/bubbletea.png" alt="Try our famous bubble tea!" />
+                    </li>
+                    <li>
+                        <img src="img/teatime.png" alt="Check out our tea time happy hour!"/>
+                    </li>
+                    <li>
+                        <img src="img/honeytoast.png" alt="Take our infamous Honey Toast challenge!"/>
+                    </li>
+                    <li>
+                        <img src="img/livebands.png" alt="Live entertainment every Saturday at 7pm!"/>
+                    </li>
+                </ul>
+
+                <hr>
+              </div>
+      </div>
+
+
+      <div class="row">
+          <div id="reservation" class="large-4 columns">
+
+          <form>
+              <h2>Make a Reservation!</h2>
+              <h5>Ideal Reservation Date:</h5>
+              <input type="date" placeholder="mm/dd" name="resdate" required>
+
+              <h5>Time:</h5>
+              <input type="date" placeholder="hh:mm am/pm" name="resdate">
+
+              <h5>Party Size:</h5>
+              <select name="party">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="army">...an army!</option>
+              </select>
+
+              <button type="submit" value="Reserve" class="button">Make Reservation</button>
+          </form>
+
+          </div>
+          <div id="events" class="large-8 columns">
+                  <h5>Midnight Tea: 12/13/2014 presents...</h5>
+                  <h3>Valkyrie Kiss</h3>
+                  <img src="img/valkyriekiss.jpg" alt="Valkyrie Kiss"/>
+                  <p>
+                      Local San Fransokyo Bay Area-based Power Rock band will be sharing their love of jRock this Saturday
+                      during <em>Midnight Tea</em>! Seating starts at 7pm!
+                  </p>
+                  <a href="#">Make a reservation today!</a> - <a href="#">Upcoming events</a>
+
+          </div>
+          <div class="row">
+              <div id="menu" class="large-12 columns">
+                  <hr>
+                  <h1>Our Menu!</h1>
+              </div>
+
+              <div id="macaron" class="large-3 columns media-extend">
+                  <table>
+                    <th>Macaron</th>
+                    <th>Ganache</th>
+                    <tr>
+                      <td>Vanilla</td>
+                      <td>Peppermint</td>
+                    </tr>
+                    <tr>
+                      <td>Chocolate</td>
+                      <td>Double-fudge</td>
+                    </tr>
+                    <tr>
+                      <td>Green Tea</td>
+                      <td>Matcha-mint</td>
+                    </tr>
+                    <tr>
+                      <td>Mocha</td>
+                      <td>Pumpkin Spice</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">3 for $5 | 10 for $12</td>
+                    </tr>
+                  </table>
+              </div>
+              <div id="bubbletea" class="large-4 columns media-extend">
+                  <table>
+                      <th>Bubble Tea</th>
+                      <th>Hot</th>
+                      <th>Cold</th>
+                      <tr>
+                          <td>Vanilla Roobios</td>
+                          <td>x</td>
+                          <td>x</td>
+                      </tr>
+                      <tr>
+                          <td>Matcha Green Tea</td>
+                          <td>x</td>
+                          <td>x</td>
+                      </tr>
+                      <tr>
+                          <td>Jasmine</td>
+                          <td>x</td>
+                          <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                          <td>Taro</td>
+                          <td>&nbsp</td>
+                          <td>x</td>
+                      </tr>
+                      <tr>
+                          <td>Oolong</td>
+                          <td>x</td>
+                          <td>x</td>
+                      </tr>
+                      <tr>
+                          <td>Peppermint</td>
+                          <td>x</td>
+                          <td>x</td>
+                      </tr>
+                      <tr>
+                          <td>Lavender-honey</td>
+                          <td>x</td>
+                          <td>x</td>
+                      </tr>
+                      <tr>
+                          <td colspan="3">Add regular or almond milk for 0.50!</td>
+                      </tr>
+                      <tr>
+                          <td colspan="3">S - $2 | M - $3 | L - $3.50</td>
+                      </tr>
+                  </table>
+              </div>
+              <div class="large-5 columns">
+                  <table class="food-menu" id="honeytoast">
+                      <th>Honey Toast Name</th>
+                      <th>Ice Cream</th>
+                      <th>Garnish</th>
+                      <tr>
+                          <td>Thousand Sunny Honey</td>
+                          <td>Vanilla - Strawberry - Matcha Green Tea</td>
+                          <td>Chocolate/Double fudge Macarons - Orange and Chocolate Pocky - Matcha dusting</td>
+                      </tr>
+
+                      <tr>
+                      <td>Santa Baby</td>
+                      <td>Vanilla - Peppermint</td>
+                      <td>Green tea/Matcha mint Macarons - Almond-crushed Pocky - Powdered Sugar - Crushed Candy Canes</td>
+                      </tr>
+
+                      <tr>
+                          <td>Diablo</td>
+                          <td>Chocolate</td>
+                          <td>Chocolate/Double fudge Macaron - Chocolate Pocky - Powdered Sugar - Drizzled caramel and fudge</td>
+                      </tr>
+                      <tr>
+                          <td colspan="4">Customizations available-- just ask!</td>
+                      </tr>
+                      <tr>
+                          <td colspan="4">$12 each -- share with your friends!</td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+
+      </div>
+
+
+
+      <footer id="location" class="row">
+          <div class="large-12 columns">
+              <hr/>
+              <div class="row">
+                  <div class="small-5 columns">
+
+                      <h5>Location:</h5>
+                        <p>
+                        1737 Post St #393 <br/>
+                        San Francisco, CA 94115
+                        </p>
+                        <p>
+                            (415)510-7070
+                        </p>
+                        <p>
+                        <a href="mailto:info@kissatencafe.com">info@kissatencafe.com</a>
+                        </p>
+                  </div>
+                  <div class="large-6 columns">
+                      <ul class="inline-list right">
+                          <li><a href="#">Twitter</a></li>
+                          <li><a href="#">Facebook</a></li>
+                          <li><a href="#">Instagram</a></li>
+                          <li><a href="#">Yelp</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+      <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>
+          $(document).foundation();
+        </script>
+
+  </body>
+</html>

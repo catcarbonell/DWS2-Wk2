@@ -1,0 +1,51 @@
+/* --- headers --*/
+h1, h2, h3 {
+  font-family: "Fredoka One", cursive;
+  font-size: 4em;
+  color: #c46875;
+  text-align: center; }
+
+h2 {
+  font-family: "Fredoka One", cursive;
+  font-size: 1.6em; }
+
+h3 {
+  font-family: "Fredoka One", cursive;
+  font-size: 2.35294em; }
+
+h4, .button, nav a.button, h5, th {
+  font-family: "Fredoka One", cursive;
+  font-size: 1.14286em;
+  color: #555; }
+
+.logo h1, .logo h2, .logo h3 {
+  font-family: "Fredoka One", cursive;
+  font-size: 2em; }
+
+/* --- buttons & links --- */
+a, a:visited {
+  color: #c46875;
+  text-decoration: none; }
+  a:hover, a:visited:hover {
+    color: #555; }
+
+.button, nav a.button {
+  background-color: #eee; }
+  .button:hover, nav a.button:hover {
+    background-color: #eee;
+    color: #c46875; }
+
+nav a.button {
+  background-color: white; }
+
+/*--- MEDIA QUERIES ---*/
+@media only screen and (max-width: 60em) {
+  .media-extend table {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; }
+
+  td:nth-child(5n+1) {
+    width: 20%; } }
+
+/*# sourceMappingURL=custom.css.map */
