@@ -13,6 +13,7 @@
 
         <!-- fonts -->
         <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr.js"></script>
 
@@ -24,9 +25,9 @@
           <header class="logo large-4 columns">
               <h1>The Lucky Cat Café</h1>
           </header>
-          <nav class="large-8 columns">
+          <nav class="large-8 columns" data-topbar role="navigation">
               <ul class="button-group right">
-                  <li><a href="#reservation" class="button">Reservations</a></li>
+                  <li><a href="#reservation" class="button" >Reservations</a></li>
                   <li><a href="#menu" class="button">Menu</a></li>
                   <li><a href="#events" class="button">Events</a></li>
                   <li><a href="#location" class="button">Location</a></li>
@@ -45,7 +46,7 @@
                         <img src="img/teatime.png" alt="Check out our tea time happy hour!"/>
                     </li>
                     <li>
-                        <img src="img/honeytoast.png" alt="Take our infamous Honey Toast challenge!"/>
+                        <img src="img/honeytoast.png" alt="Enjoy our infamous Honey Toast!"/>
                     </li>
                     <li>
                         <img src="img/livebands.png" alt="Live entertainment every Saturday at 7pm!"/>
@@ -60,7 +61,7 @@
       <div class="row">
           <div id="reservation" class="large-4 columns">
 
-          <form>
+          <form id="resform">
               <h2>Make a Reservation!</h2>
               <h5>Ideal Reservation Date:</h5>
               <input type="date" placeholder="mm/dd" name="resdate" required>

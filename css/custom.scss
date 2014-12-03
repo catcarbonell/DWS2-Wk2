@@ -1,6 +1,11 @@
 @mixin headers ($shrinkray){
   font-family: $header-font;
-  font-size: $header-font-size / ($shrinkray);
+  font-size: $primary-font-size / ($shrinkray);
+}
+
+@mixin text ($shrinkray){
+  font-family: $primary-font;
+  font-size: $primary-font-size / ($shrinkray);
 }
 
 @mixin button ($plus){
@@ -15,9 +20,19 @@
 $primary-color: #c46875;
 $secondary-color: #555;
 $header-font: "Fredoka One", cursive;
-$header-font-size: 4em;
+$primary-font: "Josefin Sans", Arial, sans-serif;
+$primary-font-size: 4em;
 $primary-bg: #eee;
 
+/* --- global --*/
+div p, td, a {
+  @include text (3.5);
+}
+
+table td{
+  text-align: center;
+  vertical-align: middle;
+}
 
 /* --- headers --*/
 
@@ -80,10 +95,17 @@ nav a.button {
 
 /*--- MEDIA QUERIES ---*/
 
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 1080px) {
 
   body {
-    font-size: 0.7em;
+    font-size: 0.9em;
+  }
+
+  div {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0 5%;
+    overflow: hidden;
   }
 
   .media-extend table {
@@ -94,13 +116,6 @@ nav a.button {
 
   .media-extend td:nth-child(5n+1){
     width: 30%;
-  }
-
-  div {
-    width: 75%;
-    margin: 0 auto;
-    padding: 0 5%;
-    overflow: hidden;
   }
 
 }
