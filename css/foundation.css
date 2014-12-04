@@ -3116,7 +3116,7 @@ meta.foundation-mq-topbar {
 
 .touch .orbit-container .orbit-prev,
 .touch .orbit-container .orbit-next {
-  display: none; }
+  display: inherit; }
 .touch .orbit-bullets {
   display: none; }
 
@@ -3145,6 +3145,7 @@ meta.foundation-mq-topbar {
 
   .orbit-bullets {
     display: none; } }
+
 [data-magellan-expedition], [data-magellan-expedition-clone] {
   background: white;
   z-index: 50;

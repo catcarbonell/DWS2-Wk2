@@ -31,9 +31,30 @@ div p, td, a {
 }
 
 /* --- gallery/ORBIT --- */
-.orbit-container {
-  font-;
+
+.orbit-slide-number {
+  display: none;
 }
+
+.orbit-next, .orbit-prev {
+  opacity: 0.3;
+}
+
+.orbit-container .orbit-prev > span {
+  border-right-style: solid;
+  border-color: transparent;
+  border-right-color: $primary-color; }
+
+.orbit-container .orbit-next > span {
+  border-color: transparent;
+  border-left-style: solid;
+  border-left-color: $primary-color;
+  left: 50%;
+  margin-left: -4px; }
+
+.touch .orbit-container .orbit-prev,
+.touch .orbit-container .orbit-next {
+  display: inherit; }
 
 /* --- headers --- */
 
@@ -81,9 +102,18 @@ a, a:visited {
     background-color: $primary-bg;
     color: $primary-color;
   }
-
 }
 
+/* --- navigation --- */
+
+nav {
+  width: 100%;
+  margin: 2% auto;
+}
+
+nav li{
+  display: inline-block;
+}
 nav a.button {
   @extend .button;
   background-color: $primary-bg * 10;
@@ -93,10 +123,17 @@ nav a.button {
   }
 }
 
+.top-bar {
+  background-color: $primary-bg * 10;
+}
+
+
+
 /* --- MEDIA QUERIES --- */
 
 @media only screen and (max-width: 1080px) {
 
+  /* --- global --- */
   body {
     font-size: 0.9em;
   }
@@ -107,6 +144,43 @@ nav a.button {
     padding: 0 5%;
     overflow: hidden;
   }
+
+  .logo {
+    width: 50%;
+  }
+
+
+  /* --- gallery/ORBIT --- */
+  .orbit-container {
+    margin-top: 5%;
+  }
+  .orbit-next, .orbit-prev {
+    display: inherit;
+    position: justify;
+    }
+
+  .orbit-prev span {
+    margin-left: -20%
+  }
+
+  /* --- nav --- */
+
+  .button {
+    margin: 0 auto;
+  }
+
+  .top-bar {
+    height: auto;
+  }
+  .top-bar .toggle-topbar {
+    display: inline-block;
+  }
+
+  .menu-icon {
+    color: $secondary-color;
+  }
+
+  /* --- tables --- */
 
   .media-extend table {
     width: 100%;
@@ -126,5 +200,4 @@ nav a.button {
   #macaron td:nth-child(5n+1){
     width: 50%;
   }
-
 }

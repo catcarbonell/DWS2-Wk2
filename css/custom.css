@@ -4,6 +4,28 @@ div p, td, a {
   font-size: 1.14286em; }
 
 /* --- gallery/ORBIT --- */
+.orbit-slide-number {
+  display: none; }
+
+.orbit-next, .orbit-prev {
+  opacity: 0.3; }
+
+.orbit-container .orbit-prev > span {
+  border-right-style: solid;
+  border-color: transparent;
+  border-right-color: #c46875; }
+
+.orbit-container .orbit-next > span {
+  border-color: transparent;
+  border-left-style: solid;
+  border-left-color: #c46875;
+  left: 50%;
+  margin-left: -4px; }
+
+.touch .orbit-container .orbit-prev,
+.touch .orbit-container .orbit-next {
+  display: inherit; }
+
 /* --- headers --- */
 h1, h2, h3 {
   font-family: "Fredoka One", cursive;
@@ -41,11 +63,23 @@ a, a:visited {
     background-color: #eee;
     color: #c46875; }
 
+/* --- navigation --- */
+nav {
+  width: 100%;
+  margin: 2% auto; }
+
+nav li {
+  display: inline-block; }
+
 nav a.button {
+  background-color: white; }
+
+.top-bar {
   background-color: white; }
 
 /* --- MEDIA QUERIES --- */
 @media only screen and (max-width: 1080px) {
+  /* --- global --- */
   body {
     font-size: 0.9em; }
 
@@ -55,6 +89,34 @@ nav a.button {
     padding: 0 5%;
     overflow: hidden; }
 
+  .logo {
+    width: 50%; }
+
+  /* --- gallery/ORBIT --- */
+  .orbit-container {
+    margin-top: 5%; }
+
+  .orbit-next, .orbit-prev {
+    display: inherit;
+    position: justify; }
+
+  .orbit-prev span {
+    margin-left: -20%; }
+
+  /* --- nav --- */
+  .button, nav a.button {
+    margin: 0 auto; }
+
+  .top-bar {
+    height: auto; }
+
+  .top-bar .toggle-topbar {
+    display: inline-block; }
+
+  .menu-icon {
+    color: #555; }
+
+  /* --- tables --- */
   .media-extend table {
     width: 100%;
     margin: 1% auto;
